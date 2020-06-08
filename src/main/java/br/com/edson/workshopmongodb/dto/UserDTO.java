@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import br.com.edson.workshopmongodb.domain.User;
 
-public class UserDTO implements Serializable{
+public class UserDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -12,10 +12,13 @@ public class UserDTO implements Serializable{
 	private String name;
 	private String email;
 
+	public UserDTO() {
+	}
+
 	public UserDTO(User obj) {
-     	id = obj.getId();
-     	name = obj.getName();
-     	email = obj.getEmail();    			
+		id = obj.getId();
+		name = obj.getName();
+		email = obj.getEmail();
 	}
 
 	public String getId() {
